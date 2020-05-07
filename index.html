@@ -18,10 +18,10 @@
             <p>Get the latest news on how your code is doing right in your inbox</p>
         </div>
 
-        <hr>
-        <hr>
+        <hr class="hr1">
+        <hr class="hr2">
 
-        <form action="index.html" method="POST">  
+        <form>  
             <fieldset>
             <legend>Contact Information</legend>
 
@@ -64,22 +64,29 @@
 
         </fieldset>
 
-        <hr>
+        <hr class="hr2">
 
         </fieldset>
 
             <legend>Newsletter</legend>
-            <label>Select the newsletters you would like to recive</label>
+            <label>Select the newsletters you would like to recive</label><br>
+            <input type="checkbox" id="html_news" value="html_news" name="html_newsletter"><label for="html_news">HTML News</label><br>
+            <input type="checkbox" id="css_news" value="css_news" name="css_newsletter"><label for="css_news">CSS News</label><br>
+            <input type="checkbox" id="js_news" value="js_news" name="js_newsletter"><label for="js_news">Javascript News</label><br>
 
-            
 
+
+
+            <label>Newsletter format</label><br>
+            <input type="radio" id="html_format" value="html_format" name="news_format"><label for="html_format">HTML</label><br>
+            <input type="radio" id="text_format" value="text_format" name="news_format"><label for="text_format">Plain text</label><br>
 
             <label for="comment">Other topics you'd like to hear about</label>
             <textarea id="comment" name="user_comment"></textarea>
 
         </fieldset>
 
-        <button type="submit">Sign Up</button>
+        <button class="btn" type="submit">Sign Up</button>
 
         </form>
 
