@@ -14,16 +14,15 @@
             <h1>The Code Review</h1>
         </header>
 
-            <div>
+            <div class="info">
                 <h2>Signup for our newsletter</h2>
                 <p>Get the latest news on how your code is doing right in your inbox</p>
             </div>
 
             <hr class="hr1">
-            <hr>
+            <hr class="hr2">
 
-            <form>  
-                
+            <form>   
                 <fieldset class="contact-info">
                     <legend>Contact Information</legend>
                     <div class="flex-pair">
@@ -46,9 +45,10 @@
                         <input type="text" id="address" name="user_address" placeholder="175 NW 7th St" required>
                     </div>
 
-                    <div class="flex-pair"></div>
+                    <div class="flex-pair">
                     <label for="city">City</label>
                     <input type="text" id="city" name="user_city" placeholder="Miami" required>
+                    </div>
                     
                     <div class="flex-pair">
                         <label for="state">State</label>
@@ -79,16 +79,16 @@
 
             <hr>
 
-            <fieldset>
-                <legend>Newsletter</legend>
-                    <div class="news-type">
+                <fieldset>
+                    <legend>Newsletter</legend>
+                    <div class="newstype">
                         <label>Select the newsletters you would like to recive</label><br>
-                        <input type="checkbox" id="html_news" value="html_news" name="html_newsletter"><label for="html_news">HTML News</label><br>
-                        <input type="checkbox" id="css_news" value="css_news" name="css_newsletter"><label for="css_news">CSS News</label><br>
-                        <input type="checkbox" id="js_news" value="js_news" name="js_newsletter"><label for="js_news">Javascript News</label><br>
+                        <input type="checkbox" id="html_news" value="html_news" name="news_type"><label for="html_news">HTML News</label><br>
+                        <input type="checkbox" id="css_news" value="css_news" name="news_type"><label for="css_news">CSS News</label><br>
+                        <input type="checkbox" id="js_news" value="js_news" name="news_type"><label for="js_news">Javascript News</label><br>
                     </div>
 
-                    <div class="news-format">
+                    <div class="newsformat">
                         <label>Newsletter format</label><br>
                         <input type="radio" id="html_format" value="html_format" name="news_format"><label for="html_format">HTML</label><br>
                         <input type="radio" id="text_format" value="text_format" name="news_format"><label for="text_format">Plain text</label><br>
@@ -98,7 +98,7 @@
                     <textarea id="comment" name="user_comment"></textarea>
 
                     <button class="btn" type="submit">Sign Up</button>
-            </fieldset>
+                 </fieldset>
             </form>
 
         <footer>
