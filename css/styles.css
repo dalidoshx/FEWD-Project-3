@@ -3,7 +3,6 @@
 }
 
 body {
-    width: 100%;
     margin: 0;
     font-family: 'Merriweather', serif;
     background-color: #fff;
@@ -42,13 +41,13 @@ p {
 
 hr {
     border: 1px solid darkgray;
-    width: 92%;
+    width: 95%;
     margin-top: 1px;
 }
 
 .hr1 {
     border: 2px solid darkgray;
-    width: 92%;
+    width: 95%;
     margin-bottom: 2px;
 }
 
@@ -61,6 +60,7 @@ fieldset legend {
     font-size: 20px;
     margin-bottom: 10px;
     color: #e14f49;
+    padding-top: 10px;
     
 }
 
@@ -103,8 +103,8 @@ label[for="comment"] {
     padding: 5px;
 }
 
-.news-type,
-.news-format {
+.newstype,
+.newsformat {
     padding-bottom: 15px;
 }
 
@@ -139,6 +139,15 @@ footer {
     display: table;
     clear: both;
 }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    background-color: #e7e7e77a;
+}
+
  
 input[type="checkbox"]:checked + label,
 input[type="radio"]:checked + label {
@@ -153,21 +162,63 @@ input[type="radio"]:checked + label {
 
     p {
         padding: 0 22px 22px 22px;
-      }
-    
-    /* label[for="zipcode"] {
+    }
+
+    label[for="zipcode"] {
         display: block;
-      } */
+    }
     
     #zipcode {
         width: 50%;
-        display: block; /* remove */
-      }
+    }
 }
 
 @media ( min-width: 768px) {
 
+    form {
+        width: 78%;
+        margin: auto;
+        justify-content: center;
+        flex-direction: row;
+    }
+      
+    .contact-info {
+        display: flex; 
+    }
+      
+    .flex-pair{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+      
+    .flex-pair > label {
+        flex-basis: 20%; 
+    }
+      
+    input,
+    select {
+        flex-basis: 70%;
+        flex-grow: 1;
+    }
+      
+    .newstype,
+    .newsformat {
+        width: 80%;
+    }
+      
+    #zipcode {
+        flex: 0 0 35%;
+    }
 
+    hr {
+        width: 97%;
+    }
 
-
+    .hr1,
+    .hr2 {
+        width: 75%;
+    }
+      
 }
+    
