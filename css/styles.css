@@ -92,8 +92,6 @@ select[name="user_state"] {
     margin: 10px 0;
 }
 
-/* ZIPCODE FLEX  */
-
 input[type="checkbox"],
 input[type="radio"] {
     margin: 10px;  
@@ -103,6 +101,11 @@ label[for="comment"] {
     display: block;
     margin: 10px 0;
     padding: 5px;
+}
+
+.news-type,
+.news-format {
+    padding-bottom: 15px;
 }
 
 textarea {
@@ -144,4 +147,27 @@ input[type="radio"]:checked + label {
 
 .btn:hover {
   background-color: #2fb0d7;
+}
+
+@media (min-width: 320px) {
+
+    p {
+        padding: 0 22px 22px 22px;
+      }
+    
+    /* label[for="zipcode"] {
+        display: block;
+      } */
+    
+    #zipcode {
+        width: 50%;
+        display: block; /* remove */
+      }
+}
+
+@media ( min-width: 768px) {
+
+
+
+
 }
