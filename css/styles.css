@@ -30,7 +30,8 @@ h2 {
     font-weight: 600;
     font-size: 20px;
     padding-top: 20px;
-    color: #393939;
+    /* color: #393939; */
+    color: #e14f49;
 }
 
 p {
@@ -59,9 +60,8 @@ fieldset legend {
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 10px;
-    color: #e14f49;
     padding-top: 10px;
-    
+    color: #393939;
 }
 
 input[type="text"],
@@ -146,6 +146,8 @@ input[type="tel"]:focus,
 select:focus,
 textarea:focus {
     background-color: #e7e7e77a;
+    outline: none;
+    border: 1px solid #2fb0d7;
 }
 
  
