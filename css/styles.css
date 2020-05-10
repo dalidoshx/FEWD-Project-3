@@ -203,6 +203,7 @@ textarea:focus {
     background-color: #e7e7e77a;
     outline: none;
     border: 1px solid #2fb0d7;
+    transition: border-color 1s ease-in-out, box-shadow 1s ease-in-out;
 }
 
  
