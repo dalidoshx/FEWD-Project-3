@@ -206,7 +206,6 @@ textarea:focus {
     transition: border-color 1s ease-in-out, box-shadow 1s ease-in-out;
 }
 
- 
 input[type="checkbox"]:checked + label,
 input[type="radio"]:checked + label {
   font-weight: 900;
